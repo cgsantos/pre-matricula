@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistema de Pré-Matrículas</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Sistema de Pré-Matrículas</h1>
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                Pré-Matrícula
+            </div>
+            <div class="card-body">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Nome do Aluno</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="responsible">Nome do Responsável</label>
+                        <input type="text" class="form-control" id="responsible" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="branch">Filial Escolhida</label>
+                        <select class="form-control" id="branch" required>
+                            <option>Filial 1</option>
+                            <option>Filial 2</option>
+                            <option>Filial 3</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Realizar Pré-Matrícula</button>
+                </form>
+                <div id="responseMessage" class="mt-3"></div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                Status da Pré-Matrícula
+            </div>
+            <div class="card-body">
+                <p id="statusMessage">Verifique o status da sua pré-matrícula aqui.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
